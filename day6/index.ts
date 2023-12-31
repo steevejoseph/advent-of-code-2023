@@ -1,5 +1,8 @@
 // formula: distance = speed * time
-// d = (x) * ((initial_remaining_time) - (x))
+// d = (x) * ((initialRemaningTime) - (x))
+// d = (x * initialRemaningTime) - (x²)
+// where 0 <= x <= initialRemainingTime
+// Core of algo depends on finding x that leads to  a distance d that is geater than recordDistance
 // const initialRemainingTime = 7;
 // const recordDistance = 9;
 // const multiplier = 0;
@@ -90,4 +93,5 @@ const Part2 = () => {
   );
   return { answer };
 };
+
 console.log(Part2().answer);
